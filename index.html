@@ -1,0 +1,230 @@
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIRaL Lab | Sensing Populations to Investigate Rhythms and Light</title>
+    <style>
+        /* Modern Minimalist CSS Theme */
+        :root {
+            --primary: #27BBF5; /* Blue */
+            --text: #000000;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, "Arial", sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a202c;
+            text-align: center;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #cbd5e0;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 60px; /* Prevents nav bar overlap when jumping to links */
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 1rem;
+            background-color: #e2e8f0; /* Fallback placeholder color */
+        }
+        .pub-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .pub-list li {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--primary);
+        }
+        .pub-authors {
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+        .pub-journal {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #718096;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1a202c;
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lab Banner Header -->
+    <header>
+        <h1>SPIRaL Lab</h1>
+        <p>[text]</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#team">Team</a>
+        <a href="#publications">Publications</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Our Lab</h2>
+            <p>Welcome to the SPIRaL Lab at Emory Rollins School of Public Health. We use wearable sensors as tools to understand how light, temperature, and other environmental exposures influence health in real-world settings.</p>
+        </section>
+
+        <!-- Research Highlights Section -->
+        <section id="research">
+            <h2>Current Research Areas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Light Epidemiology</h3>
+                    <p>Using data from body-worn sensors to investigate light as an environmental exposure in exposome and public health research.</p>
+                </div>
+                <div class="card">
+                    <h3>Temperature and Heat Exposure</h3>
+                    <p>Collecting person-based measures of environmental and body temperature to investigate health effects of heat.</p>
+                </div>
+                <div class="card">
+                    <h3>Chronohealth in Epilepsy</h3>
+                    <p>Evaluating the relationship of environment, rhythms, and sleep to health and quality of life in epilepsy.</p>
+                </div>
+                <div class="card">
+                    <h3>Chronohealth in Population-based and Epidemiological Studies</h3>
+                    <p>Examining associations of daily behavioral rhythms and shift work to sleep and health.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Members Section -->
+        <section id="team">
+            <h2>Meet the Team</h2>
+            <div class="grid">
+                <!-- Principal Investigator -->
+                <div class="card">
+                    <!-- Tip: Create an 'images' folder and upload 'dr-wallace.jpg' to render your portrait -->
+                    <img class="profile-img" src="images/dr-wallace.jpg" alt="Dr. Danielle Wallace">
+                    <h3>Dr. Danielle Wallace</h3>
+                    <p><strong>Principal Investigator</strong></p>
+                    <p>Assistant Professor, Gangarosa Department of Environmental Health at the Rollins School of Public Health.</p>
+                </div>
+                <!-- Researcher 1 -->
+                <div class="card">
+                    <img class="profile-img" src="images/alex-doe.jpg" alt="Alex Doe">
+                    <h3>Alex Doe</h3>
+                    <p><strong>Doctoral Student</strong></p>
+                    <p>[Description].</p>
+                </div>
+                 <!-- Researcher 2 -->
+                <div class="card">
+                    <img class="profile-img" src="images/alex-doe.jpg" alt="Alex Doe">
+                    <h3>Alex Doe</h3>
+                    <p><strong>Doctoral Student</strong></p>
+                    <p>[Description].</p>
+                </div>
+                 <!-- Researcher 3 -->
+                <div class="card">
+                    <img class="profile-img" src="images/alex-doe.jpg" alt="Alex Doe">
+                    <h3>Alex Doe</h3>
+                    <p><strong>MPH Student</strong></p>
+                    <p>[Description].</p>
+                </div>
+                 <!-- Researcher 4 -->
+                <div class="card">
+                    <img class="profile-img" src="images/alex-doe.jpg" alt="Alex Doe">
+                    <h3>Alex Doe</h3>
+                    <p><strong>MPH Student</strong></p>
+                    <p>[Description].</p>
+                </div>
+                <!-- Prior lab members-->
+        <section id="team">
+            <h3>Prior Lab Members</h3>
+            <p><strong>Student name</strong> [MPH student] </p>
+        </section>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>Recent Publications</h2>
+            <ul class="pub-list">
+                <li>
+                    <div><strong>Scalable Graph Neural Networks for Cellular Phenotype Mapping</strong></div>
+                    <div class="pub-authors">Doe, A., Johnson, R., & Smith, J.</div>
+                    <div class="pub-journal">Nature Biotechnology, 2026. <a href="#">[DOI Link]</a></div>
+                </li>
+                <li>
+                    <div><strong>Benchmarking Off-Target Structural Mutations via Generative AI</strong></div>
+                    <div class="pub-authors">Martinez, L. & Smith, J.</div>
+                    <div class="pub-journal">Journal of Molecular Biology, 2025. <a href="#">[DOI Link]</a></div>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer / Contact Info -->
+    <footer>
+        <p>&copy; 2026 The SPIRaL Lab • Department of Environmental Health  • Rollins School of Public Health • Emory University</p>
+        <p>Contact: spiral [at] emory [dot] edu</p>
+    </footer>
+
+</body>
+</html>
